@@ -1,0 +1,423 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root 
+{
+    --purple-dark: #170312;
+    --pruple-medium: #33032d;
+    --purple-light: #531253;
+    --gray--light: #eaeaea;
+    --white: #f4fffd;
+
+    --red-ncs: #bf1a2fff;
+    --minion-yellow: #ecd444ff;
+    --black: #000000ff;
+    --violet-blue: #454e9eff;
+    --ghost-white: #f0eff4ff;
+
+    --winter-sky: #ff206eff;
+    --blue-bell: #a4a8d1ff;
+    --electric-blue: #97f9f9ff;
+    --arctic-lime: #cbef43ff;
+}
+  
+body 
+{
+    font-size: 20px;
+    font-family: "Akaya Telivigala", cursive;
+}
+  
+p 
+{
+    font-size: 22px;
+}
+
+h2 
+{
+    text-align: left;
+}
+  
+  /* Header */
+  
+.contenido-header 
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Fondo_header.jpg);
+    background-color: #ecd444ff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.contenido-header .fondo 
+{
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+}
+  
+.contenido-header .texto 
+{
+    width: calc(100vw - 20px);
+    height: 100vh;
+    font-size: 90 px;
+    font-weight: 700;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+  
+.stroke 
+{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px #454e9eff;
+}
+  
+  /* navbar */
+  
+.menu 
+{
+    background-color: #454e9eff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999; /* para problemas con el menu y el slider*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Akaya Telivigala", cursive;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+  
+.menu a 
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26 px;
+    background-color: #454e9eff;
+    margin: 0 10px;
+    transition: 0.5s ease all;
+    color: #ecd444ff;
+    text-decoration: none;
+}
+  
+.menu a:hover 
+{
+    transform: translateY(18px);
+    background-color: #454e9eff;
+}
+  
+  /* nosotros */
+  
+.Dulces 
+{
+    margin-bottom: 60px;
+    margin: 20px;
+    margin-block-end: 60px;
+}
+  
+.subtitulo 
+{
+    font-size: 20px;
+    color: #454e9eff;
+    font-family: "Akaya Telivigala", cursive;
+    font-weight: 700;
+    z-index: 2; /*Para asegurar que nos quede arriba de la raya*/
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.subtitulo span 
+{
+    background-color: var(--gray--light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative; /* el z index se pueda aplicar */
+}
+  
+.subtitulo::after 
+{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: #454e9eff;
+    position: relative;
+    top: -29px; /*Vamos a posicionar la linea hacia arriba */
+    z-index: 1;
+}
+  
+.Dulces .titulo 
+{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase; /*Transforma todo a mayusculas*/
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.Dulces .enlace:hover 
+{
+    text-decoration: none;
+    letter-spacing: 3px; /* espaciado para las letras*/
+    border-bottom: 1px solid var(--purple-light);
+}
+  
+  /* productos */
+  
+.Snacks
+{
+    background: var(--gray--light);
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-block-end: 0px;
+}
+  
+.Snacks .titulo 
+{
+    width: 70%;
+    font-size: 30px;
+    text-transform: uppercase; /*Transforma todo a mayusculas*/
+    display: inline-block;
+    margin-bottom: 50px;
+}
+  
+.Snacks .Snack 
+{
+    position: relative;
+    width: 100%;
+}
+  
+.Snacks .overlay 
+{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #454e9eff;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+  
+.Snacks .Snack:hover .overlay 
+{
+    width: 100%;
+    opacity: 0.8; /*para que se ponga un poco opaca la imagen*/
+}
+  
+.Snacks .Snack .overlay-texto 
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap; /* para ponerlo todo en una linea de texto*/
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* el restante(texto) me lo oculte*/
+    border-top: 1px solid #fff;
+    border-bottom: 1 px solid #fff;
+}
+  
+.Snacks .btn-Snacks
+{
+    background-color: #454e9eff;
+    color: #fff;
+    padding: 7 px 20 px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+  
+.Snacks .btn-Snacks:hover 
+{
+    background-color: transparent;
+    border: 2px solid #454e9eff;
+    color: #454e9eff;
+}
+  
+.enlace 
+{
+    text-decoration: none;
+    color: var(--white);
+}
+  
+.enlace:hover 
+{
+    text-decoration: none;
+    color: var(--purple-light);
+}
+  
+  /* separador */
+  
+.separador 
+{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/Fondo_separador.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+  
+.separador p
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Noto Serif", serif;
+    padding: 10px;
+}
+  
+.conferencia1
+{
+    background: #ff206eff;
+    color: white;
+    padding: 80px;
+    text-align: justify;
+    columns: 2;
+}
+
+.Conferencia1-Images
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.conferencia2
+{
+    background: #97f9f9ff;
+    color: #454e9eff;
+    padding: 80px;
+    text-align: justify;
+    columns: 2;
+}
+
+.Conferencia2-Images
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.conferencia3
+{
+    background: #cbef43ff;
+    color: white;
+    padding: 80px;
+    margin-block-end: 30px;
+    text-align: justify;
+    columns: 2;
+}
+
+.Conferencia3-Images
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.Precios
+{
+    text-align: justify;
+    margin: 30px;
+    color: black;
+}
+
+.Precios-Images
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.contacto
+{
+    background-color: #454e9eff;
+    text-align: center;
+    color:#ecd444ff;
+    padding-block-end: 40px;
+}
+  
+  /* galeria */
+  
+.galeria 
+{
+    margin-bottom: 60px;
+}
+  
+.galeria img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.Dulces-Images img 
+{
+    padding: 10px;
+    width: 500px;
+}
+
+.Snacks-Images img 
+{
+    padding: 10px;
+    width: 489px;
+}
+  /* mediaqueries */
+  
+@media screen and (max-width: 992px) 
+{
+    p 
+    {
+      font-size: 15px;
+    }
+  
+    .contenido-header .texto 
+    {
+      font-size: 20px;
+    }
+}
+  
+.menu a 
+{
+    font-size: 20px;
+}
+  
+.Dulces .titulo, .Snacks .titulo 
+{
+    font-size: 20px;
+}
+  
+.texto 
+{
+    display: inline-block;
+    margin-top: 40px;
+    color: #454e9eff;
+    font-weight: 700;
+    border-bottom: 1 px solid transparent;
+    transition: 0.3s ease all;
+}
+  
+.texto:hover 
+{
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #454e9eff;
+}
