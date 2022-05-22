@@ -1,0 +1,24 @@
+
+body
+{
+    margin: 50px;
+    color: white;
+    background-color: #060e1b;;
+}
+
+p
+{
+    text-align: justify;
+    font-family: Arial;
+}
+
+li
+{
+    font-family: Arial;
+}
+
+.Centrado
+{
+    text-align: center;
+    font-family: Arial;
+}
