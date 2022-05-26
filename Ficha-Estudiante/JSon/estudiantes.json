@@ -1,0 +1,79 @@
+[
+    {
+        "nombre": "Juan Pablo Rios Restrepo",
+        "imagen": "https://pablorios18.neocities.org/Foto.jpg",
+        "github": "https://github.com/PabloRios18/Proyecto-ProgrmacionWEB",
+        "neocities": "https://pablorios18.neocities.org/",
+        "email": "jpriosr",
+        "actividades": 
+        [
+            {
+                "actividad": "Hoja de vida HTML",
+                "linkA":"https://pablorios18.neocities.org/Hoja-Vida/Hoja-Vida.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "Landing Page",
+                "linkA":"https://pablorios18.neocities.org/Landing-Page/Landing-Page.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "Sopa de Letras Java Script",
+                "linkA":"https://pablorios18.neocities.org/Sopa-Letras-JS/Sopa-Letras-JS.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "¿Que es el modelo DOM?",
+                "linkA":"https://pablorios18.neocities.org/Consultas/Consulta-1.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "¿Que es un Langing Page?",
+                "linkA":"https://pablorios18.neocities.org/Consultas/Consulta-2.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "Ejercicios Java Scrip",
+                "linkA":"https://pablorios18.neocities.org/Taller-JS/indexJS.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "Sopa de Letras",
+                "linkA":"https://pablorios18.neocities.org/Sopa-Letras/Sopa-Letras.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "FlashCard",
+                "linkA":"https://pablorios18.neocities.org/Sopa-Letras/FlashCard.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            },
+            {
+                "actividad": "Tienda Virtual",
+                "linkA":"https://pablorios18.neocities.org/Tienda/Home.html",
+                "estadouiux": "100%",
+                "estadotecnico": "100%"
+            }
+        ],
+
+        "valoraciones":
+        [
+            {
+                "valhtml": "100%",
+                "valcss": "100%",
+                "valjs": "100%",
+                "valui": "100%",
+                "valux": "100%"
+            }
+        ],
+
+        "calificacion": "100%"
+    }
+]

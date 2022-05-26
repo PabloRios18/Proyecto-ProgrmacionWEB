@@ -1,0 +1,120 @@
+
+:root
+{
+    --indigo-dye: #134074ff;
+    --prussian-blue: #13315cff;
+    --oxford-blue: #0b2545ff;
+    --pewter-blue: #8da9c4ff;
+    --mint-cream: #eef4edff;
+}
+
+body
+{
+    background-image: url("Fondo.jpg");
+    background-color: #060e1b;
+    background-repeat: no-repeat;
+    background-size: 1600px 500px;
+    background-position-x:center;
+    background-position-y:top;
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+section
+{
+    background: grey;
+    width: 480px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.Presentacion
+{
+    background: gray;
+    width: 1200px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.Grupo
+{
+    margin: 30px;
+    display: table-cell;
+    padding: 10px;
+}
+
+.Grupo2
+{
+    columns: 2;
+    padding: 10px;
+}
+
+.Portafolio
+{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.Nombre
+{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.Centrado
+{
+    text-align: center;
+}
+
+.Justificado
+{
+    text-align: justify;
+}
+
+.Derecha
+{
+    float: right;
+    margin-top: 0.5px;
+    margin-right: 50px;
+}
+
+.Foto
+{
+    
+    margin-top: 15px;
+}
+
+.Tamano
+{
+    font-size: 35px;
+}
+
+.Tamano1
+{
+    font-size: 25px;
+}
+
+.Tamano2
+{
+    font-size: 20px;
+}
+
+.Tamano3
+{
+    font-size: 7px;
+    margin-top: 15px;
+}
+
+.Foto
+{
+    background: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url("Foto.jpg");
+    background-repeat: no-repeat;
+    background-size: 110px 130px;
+}
