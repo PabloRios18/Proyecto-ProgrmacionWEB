@@ -1,0 +1,119 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root 
+{
+  --purple-dark: #170312;
+  --pruple-medium: #33032d;
+  --purple-light: #531253;
+  --gray--light: #eaeaea;
+  --white: #f4fffd;
+
+  
+  --rose-taupe: #8b575cff;
+  --old-rose: #c98986ff;
+  --orchid-pink: #f6bdd1ff;
+  --pale-purple-pantone: #f6e4f6ff;
+  --cultured: #f4f4f4ff;
+
+  --snow: #f6efeeff;
+  --glossy-grape: #a288a6ff;
+  --lilac-luster: rgb(206, 193, 202);
+  --black-shadows: #ccbcbcff;
+}
+
+body 
+{
+  font-size: 20px;
+  font-family: "Akaya Telivigala", cursive;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f6efeeff;
+}
+
+h1 
+{
+  font-size: 40px;
+  text-align: center;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.card .card-img-top 
+{
+  height: 250px;
+}
+
+.card 
+{
+  background-color: rgb(215, 207, 214);
+}
+
+.card .btn-dark 
+{
+  background-color: #c98986ff;
+  color: black;
+}
+
+.card .btn-dark:hover 
+{
+  transform: translateY(18px);
+  color: black;
+  background-color: rgb(215, 207, 214);
+}
+
+.menu 
+{
+  background-color: var(--purple-dark);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  z-index: 999; /* para problemas con el menu y el slider*/
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Akaya Telivigala", cursive;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+.menu a 
+{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 26 px;
+  background-color: #c98986ff;
+  margin: 0 10px;
+  transition: 0.5s ease all;
+  color: var(--gray--light);
+  text-decoration: none;
+}
+
+.menu a:hover 
+{
+  transform: translateY(18px);
+  background-color: #c98986ff;
+}
+
+.redes-sociales
+{
+  padding: 10px;
+  background-color: var(--purple-dark);
+}
+
+.redes-sociales img 
+{
+  padding: 5px;
+  border-radius: 100%;
+  width: 50px;
+  transition: 0.3s ease all;
+}
+
+.redes-sociales img:hover 
+{
+  transform: scale(1.2);
+}
